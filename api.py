@@ -5,7 +5,7 @@ from messages_processor import MessagePreProcessor
 
 app = Flask(__name__)
 bot = Bot()
-bot.train(MessagePreProcessor("messages.log").pre_processed_messages)
+bot.train(MessagePreProcessor("example.log").pre_processed_messages)
 
 
 @app.route('/', methods=['GET'])
@@ -17,4 +17,4 @@ def index():
         return jsonify({"status": "error", "response": "No text parameter"})
 
 if __name__ == '__main__':
-    app.run(host="localhost", port=8080, debug=True)
+    app.run(host="localhost", port=8000, debug=True)
