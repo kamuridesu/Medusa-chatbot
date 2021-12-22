@@ -1,2 +1,3 @@
 *.sqlite*
 *.pickle
+__pycache__

@@ -1,6 +1,5 @@
 import re
 
-
 class MessagePreProcessor:
     def __init__(self, filename: str):
         with open(filename, "r", encoding="utf-8") as file: 
